@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dell Computer Essentials Course</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Dell Computer Essentials Course</h1>
+        <p>Your guide to mastering your Dell computer safely and efficiently</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><button onclick="scrollToSection('course')">Course Overview</button></li>
+            <li><button onclick="scrollToSection('resources')">Resources</button></li>
+            <li><button onclick="scrollToSection('legal')">Pricing & Legal</button></li>
+            <li><button onclick="scrollToSection('cart')">View Cart</button></li>
+        </ul>
+    </nav>
+
+    <section id="course">
+        <h2>Dell Computer Essentials for Beginners: Revised 5-Day-a-Week Course</h2>
+        <button class="cta-button" onclick="openDocument('https://docs.google.com/document/d/1AKEKj15Pck3x5jBEamXvX3wXIBBdDXFjuWCoD_6eKX8/edit?usp=sharing')">View Course Document</button>
+    </section>
+    
+    <section id="resources">
+        <h2>Resources For Lessons</h2>
+        <button class="cta-button" onclick="openDocument('https://docs.google.com/document/d/1DBeK9qKMpt6qIWMc2Atl2XP1F7J_ld6dQNkHSpKi0Dc/edit?usp=sharing')">View Resources Document</button>
+    </section>
+    
+    <section id="legal">
+        <h2>Pricing & Legal</h2>
+        <div class="price-selector">
+            <label for="price-package">Choose your package:</label>
+            <select id="price-package">
+                <option value="1-padel-racket">1 Padel Racket</option>
+                <option value="1-padel-racket-25-dollars">1 Padel Racket + $25</option>
+                <option value="1-padel-racket-cereal">1 Padel Racket + 1 Box of Cinnamon Toast Crunch Cereal</option>
+            </select>
+            <button class="cta-button" onclick="addToCart()">Add to Cart</button>
+        </div>
+        <button class="cta-button" onclick="openDocument('https://docs.google.com/document/d/1Sg6NxtTJhjgVGBQmdpNnV-Z_CoYFGQY-tUDJd2mi0RE/edit?usp=sharing')">View Legal Terms & Pricing</button>
+        <button class="cta-button" onclick="openDocument('https://docs.google.com/document/d/1Sg6NxtTJhjgVGBQmdpNnV-Z_CoYFGQY-tUDJd2mi0RE/copy')">Make a Copy of Legal Terms & Pricing</button>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <button class="cta-button checkout-button" onclick="checkout()">Proceed to Checkout</button>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Dell Computer Essentials Course. All rights reserved.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
